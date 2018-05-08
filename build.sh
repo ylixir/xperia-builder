@@ -20,13 +20,8 @@ repo init -u https://android.googlesource.com/platform/manifest -b android-8.1.0
 cd .repo
 git clone https://github.com/sonyxperiadev/local_manifests
 cd local_manifests
-git checkout <branch>
-cd ../..
+git checkout android-8.1.0_r20
+cd ../../..
 
-repo sync
+. resume.sh
 
-./repo_update.sh
-
-source build/envsetup.sh && lunch
-
-make -j 4
