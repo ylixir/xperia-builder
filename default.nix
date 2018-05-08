@@ -4,5 +4,5 @@ in with pkgs;
   [
     SDL
     gnupg
-#    jdk
+    jdk
   ]

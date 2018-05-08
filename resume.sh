@@ -6,8 +6,6 @@ export PATH=`pwd`/bin:$PATH
 
 cd aosp
 
-repo sync
-
 ./repo_update.sh
 
 # compact aosp_f5321-eng

@@ -21,7 +21,12 @@ cd .repo
 git clone https://github.com/sonyxperiadev/local_manifests
 cd local_manifests
 git checkout android-8.1.0_r20
-cd ../../..
+cd ../..
+
+repo sync
+cd ..
+
+git apply --directory=aosp/build/soong/ fix_build.patch
 
 . resume.sh
 
